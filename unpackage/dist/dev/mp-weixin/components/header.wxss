@@ -1,0 +1,25 @@
+
+.header.data-v-b86c55f0{
+	width: 100%;
+	padding: 20rpx 0;
+	padding-top: 70rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	position: relative;
+	z-index: 10;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.header-icon.data-v-b86c55f0{
+	font-size: 35rpx;
+}
+.header-content.data-v-b86c55f0{
+	font-size: 35rpx;
+	font-weight: 600;
+}
+

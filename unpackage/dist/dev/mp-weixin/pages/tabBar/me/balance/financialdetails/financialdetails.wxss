@@ -1,0 +1,100 @@
+
+.big.data-v-aff7a526 {
+	padding: 0 0;
+	overflow: hidden;
+	background-color: #f9f9f9;
+}
+.header-box.data-v-aff7a526 {
+	background-color: #ffffff;
+}
+.header.data-v-aff7a526 {
+	width: 100%;
+	padding: 0 35rpx;
+}
+.header-tab.data-v-aff7a526 {
+	width: calc(100% + 70rpx);
+	margin-left: -35rpx;
+	margin-top: 50rpx;
+	padding-bottom: 40rpx;
+	box-sizing: content-box;
+	position: relative;
+	z-index: 5;
+	box-shadow: 0 5px 5px 0px rgba(225, 225, 225, 0.1);
+}
+.footer.data-v-aff7a526 {
+	overflow: hidden;
+	position: relative;
+}
+.footer-small.data-v-aff7a526 {
+	padding: 80rpx 40rpx;
+}
+.footer-box.data-v-aff7a526 {
+	-webkit-transition: 0.5s all;
+	transition: 0.5s all;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.recharge.data-v-aff7a526 {
+	width: 100%;
+	padding-bottom: 20rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin-bottom: 20rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	border-bottom: 1px solid #E1E1E1;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.recharge-left.data-v-aff7a526 {
+	height: 100%;
+}
+.recharge-right.data-v-aff7a526 {
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.recharge-left-header.data-v-aff7a526{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.recharge-left-header-content.data-v-aff7a526{
+	font-size: 32rpx;
+	font-weight: 600;
+}
+.recharge-left-header-carname.data-v-aff7a526{
+	color: #909090;
+	font-size: 22rpx;
+	margin-left: 20rpx;
+}
+.recharge-left-header-state.data-v-aff7a526{
+	color: #FF8989;
+	margin-left: 20rpx;
+	font-size: 22rpx;
+}
+.recharge-left-footer.data-v-aff7a526{
+	margin-top: 10rpx;
+	font-size: 25rpx;
+	color: #909090;
+}
+.recharge-right-money.data-v-aff7a526{
+	margin-left: 20rpx;
+	color: #EA0000;
+	font-size: 35rpx;
+}
+.recharge-right-money-number.data-v-aff7a526{
+	margin-top: 5rpx;
+}
+

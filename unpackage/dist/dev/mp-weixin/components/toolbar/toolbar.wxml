@@ -1,0 +1,1 @@
+<view class="toolbar data-v-3d30c0fc"><view data-event-opts="{{[['tap',[['reset',['$event']]]]]}}" class="toolbar-left data-v-3d30c0fc" bindtap="__e">{{'重置'+importnumber+''}}</view><view data-event-opts="{{[['tap',[['examine',['$event']]]]]}}" class="toolbar-right data-v-3d30c0fc" bindtap="__e">{{'查看'+importnumber+''}}</view></view>

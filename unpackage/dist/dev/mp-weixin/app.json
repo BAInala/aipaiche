@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tabBar/carsource/carsource",
+    "pages/tabBar/fixedprice/fixedprice",
+    "pages/tabBar/me/me",
+    "pages/otherpage/carparticulars/carparticulars",
+    "pages/otherpage/carparticulars/carparticularsparticulars/carparticularsparticulars",
+    "pages/otherpage/message/message",
+    "pages/otherpage/message/announcement/announcement",
+    "pages/index/detection/detection",
+    "pages/tabBar/me/balance/balance",
+    "pages/tabBar/me/allmes/allmes",
+    "pages/tabBar/me/balance/refill/refill",
+    "pages/tabBar/me/balance/withdraw/withdraw",
+    "pages/tabBar/me/balance/financialdetails/financialdetails",
+    "pages/tabBar/me/issue/issue",
+    "pages/tabBar/me/sale/sale",
+    "pages/tabBar/me/buy/buy",
+    "pages/otherpage/collect/collect",
+    "pages/tabBar/me/search/search"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#FF7F00",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabBarimg/homehui.png",
+        "selectedIconPath": "static/tabBarimg/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabBar/carsource/carsource",
+        "iconPath": "static/tabBarimg/cheyuanhui.png",
+        "selectedIconPath": "static/tabBarimg/cheyuan.png",
+        "text": "车源"
+      },
+      {
+        "pagePath": "pages/tabBar/fixedprice/fixedprice",
+        "iconPath": "static/tabBarimg/yikoujiahui.png",
+        "selectedIconPath": "static/tabBarimg/yikoujia.png",
+        "text": "一口价"
+      },
+      {
+        "pagePath": "pages/tabBar/me/me",
+        "iconPath": "static/tabBarimg/mehui.png",
+        "selectedIconPath": "static/tabBarimg/me.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": ""
+    }
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["uni-app:///main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,2H;AACAA,UAAU,CAACC,kBAAD,CAAV,C","file":"pages/tabBar/me/balance/gobalance/gobalance.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pages/tabBar/me/balance/gobalance/gobalance.vue'\ncreatePage(Page)"],"sourceRoot":""}
