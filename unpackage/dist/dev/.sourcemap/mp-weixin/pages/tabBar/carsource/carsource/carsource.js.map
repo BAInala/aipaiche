@@ -1,0 +1,1 @@
+{"version":3,"sources":["uni-app:///main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,yO;AACAA,UAAU,CAACC,kBAAD,CAAV,C","file":"pages/tabBar/carsource/carsource/carsource.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pages/tabBar/carsource/carsource/carsource.vue'\ncreatePage(Page)"],"sourceRoot":""}

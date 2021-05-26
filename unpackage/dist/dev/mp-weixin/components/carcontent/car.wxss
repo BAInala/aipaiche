@@ -1,0 +1,66 @@
+
+.big.data-v-69e0a9e5 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin-bottom: 30rpx;
+}
+.big>.car-img.data-v-69e0a9e5 {
+	width: 37%;
+	height: 190rpx;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.big>.car-content.data-v-69e0a9e5 {
+	width: 63%;
+	height: 190rpx;
+	position: relative;
+	padding: 0 15px;
+}
+.car-headline.data-v-69e0a9e5 {
+	font-size: 31rpx;
+	color: #271E19;
+	height: 85rpx;
+	overflow: hidden;
+}
+.car-detailed.data-v-69e0a9e5 {
+	color: #909090;
+	font-size: 22rpx;
+	line-height: 60rpx;
+}
+.money.data-v-69e0a9e5 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	bottom: 0;
+	height: 30rpx;
+	overflow: hidden;
+	margin-top: 15rpx;
+}
+.money-number.data-v-69e0a9e5 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.money-number-left.data-v-69e0a9e5 {
+	color: #FF7F00;
+	font-size: 31rpx;
+}
+.money-number-right.data-v-69e0a9e5 {
+	font-size: 33rpx;
+	color: #FF7F00;
+	margin-left: 8rpx;
+}
+.people.data-v-69e0a9e5 {
+	font-size: 25rpx;
+	color: #909090;
+	position: absolute;
+	right: 15px;
+}
+

@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "u-popup": "/uview-ui/components/u-popup/u-popup",
+    "u-form-item": "/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/uview-ui/components/u-input/u-input",
+    "hea-der": "/components/header",
+    "pr-op": "/components/prop",
+    "care-message": "/components/carmessage"
+  }
+}

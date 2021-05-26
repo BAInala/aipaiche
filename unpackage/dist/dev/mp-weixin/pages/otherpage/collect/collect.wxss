@@ -1,0 +1,38 @@
+
+.big.data-v-d2419fa8 {
+	padding: 0 30rpx;
+}
+.section.data-v-d2419fa8 {
+	width: 100%;
+	height: 100rpx;
+	background-color: #18B566;
+	margin-top: 40rpx;
+}
+.newcar-content.data-v-d2419fa8{
+	margin-top: 40rpx;
+	padding-bottom: 40rpx;
+}
+.img-nocar.data-v-d2419fa8{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	margin-top: 300rpx;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.img-nocar image.data-v-d2419fa8{
+	width: 400rpx;
+	height: 180rpx;
+}
+.img-content.data-v-d2419fa8{
+	width: 100%;
+	margin-top: 50rpx;
+	text-align: center;
+}
+.lin.data-v-d2419fa8{
+	line-height: 50rpx;
+}
+
