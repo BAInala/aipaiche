@@ -257,7 +257,7 @@
 						uni.login({
 							provider: 'weixin',
 							success: (res2) => {
-								console.log(res2.code,'code');
+								console.log(res2.code);
 								uni.request({
 									url: that.url + 'login/wx', //仅为示例，并非真实接口地址。
 									method: 'POST',

@@ -130,7 +130,7 @@
 														<view class="name">
 															{{item}}
 														</view>
-														<view @click="carpopupshow(items.baseName,items.id)" v-for="items in brand.sort[item]" :key=items.id
+														<!-- <view @click="carpopupshow(items.baseName,items.id)" v-for="items in brand.sort[item]" :key=items.id
 														 class="brand-hod-box-x">
 															<view class="hrand-img-x">
 																<image :src=items.logo mode='widthFix'></image>
@@ -138,7 +138,7 @@
 															<view class="hrand-p hrand-content-x">
 																{{items.baseName}}
 															</view>
-														</view>
+														</view> -->
 													</view>
 												</template>
 

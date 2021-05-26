@@ -10,8 +10,8 @@
 			</view>
 
 			<view class="header-tab">
-				<u-tabs bar-height="4" active-color="#FF7F00" bar-width="100" :list="list" :is-scroll="false"
-					:current="current" @change="change"></u-tabs>
+				<u-tabs bar-height="4" active-color="#FF7F00" bar-width="100" :list="list" :is-scroll="false" :current="current"
+				 @change="change"></u-tabs>
 			</view>
 		</view>
 		<!-- :style="{height:height-topheader+'px'}" -->
@@ -78,7 +78,7 @@
 
 							<view class="footer-small-box-footer">
 
-								<pr-op ref='prop' data-index="{{index}}" :show='propnumber'></pr-op>
+								<pr-op ref='prop' :index="item" :show='propnumber'></pr-op>
 
 
 								<view class="footer-small-box-footer-right">
@@ -95,8 +95,7 @@
 
 
 					<!-- 弹出层 -->
-					<u-popup :closeable=true :mask-close-able=false border-radius=20 width="90%" mode="center"
-						v-model="propshow">
+					<u-popup :closeable=true :mask-close-able=false border-radius=20 width="90%" mode="center" v-model="propshow">
 						<view class="prop">
 							<view class="change">
 								修改预约资料
@@ -128,8 +127,7 @@
 
 					<care-message v-if="current==1">
 						<template v-slot:carimg>
-							<image style="width: 35rpx;height: 35rpx;"
-								src="../../../../static/carparticulars/folderopenfill(1).png" mode=""></image>
+							<image style="width: 35rpx;height: 35rpx;" src="../../../../static/carparticulars/folderopenfill(1).png" mode=""></image>
 						</template>
 
 						<template v-slot:carusername>
@@ -245,6 +243,7 @@
 					name: '已发布的'
 				}],
 				current: 0,
+				item:"",
 
 				// 屏幕宽高
 				show: false,
@@ -282,18 +281,18 @@
 				this.left = index * this.width;
 
 			},
-			propnumbers(event) {
-				console.log(this.current, this.$refs, event.currentTarget.dataset);
+			propnumbers() {
+				console.log(this.current, this.$refs);
 
-				if (this.current == 0) {
-					for (var i = 0; i < 3; i++) {
-						this.$refs.prop[i].changeshow()
-					}
-				} else {
-					for (var i = 0; i < 1; i++) {
-						this.$refs.propright.changeshow()
-					}
-				}
+				// if (this.current == 0) {
+				// 	for (var i = 0; i < 3; i++) {
+				// 		this.$refs.prop[i].changeshow()
+				// 	}
+				// } else {
+				// 	for (var i = 0; i < 1; i++) {
+				// 		this.$refs.propright.changeshow()
+				// 	}
+				// }
 
 
 
