@@ -3,7 +3,7 @@
 		<view @tap.stop="clickprop(1)" class="footer-small-box-footer-left">
 			更多
 		</view>
-		<view :class="{'show':shows==1}" :id="`more${index}`"class="prop">
+		<view :class="{'show':shows==1}" :id="`more${index}`" class="prop">
 			<view class="padding">
 				取消预约
 			</view>
