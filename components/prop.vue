@@ -1,16 +1,9 @@
 <template>
 	<view class="big">
-<<<<<<< HEAD
 		<view @tap.stop="clickprop(1)" class="footer-small-box-footer-left">
 			更多
 		</view>
 		<view :class="{'show':shows==1}" :id="`more${index}`" class="prop">
-=======
-		<view @tap="clickprop(1)" class="footer-small-box-footer-left">
-			更多
-		</view>
-		<view :class="{'show':shows==1}" class="prop">
->>>>>>> b21e0030f3e14202dc730940c96044954718addd
 			<view class="padding">
 				取消预约
 			</view>
@@ -34,7 +27,6 @@
 	export default {
 		data() {
 			return {
-<<<<<<< HEAD
 				shows: '',
 			
 			};
@@ -42,13 +34,6 @@
 		props: {
 			show: '',
 			index:""
-=======
-				shows: ''
-			};
-		},
-		props: {
-			show: ''
->>>>>>> b21e0030f3e14202dc730940c96044954718addd
 		},
 		watch: {
 			show() {
@@ -60,7 +45,6 @@
 			clickprop(index) {
 				// console.log('子组件点击触发');
 				console.log(this.show);
-<<<<<<< HEAD
 				console.log("index",this.index);
 				console.log(this.$parent)
 				if(this.$parent.item === '' ){
@@ -75,10 +59,6 @@
 				if (!this.shows == index) {
 					this.shows = index
 					this.$parent.item=this.index;
-=======
-				if (!this.shows == index) {
-					this.shows = index
->>>>>>> b21e0030f3e14202dc730940c96044954718addd
 				} else {
 					this.shows = 0
 				}
