@@ -13,7 +13,7 @@
 			<view v-if="show==0"  class="box">
 				<view class="detectioncontent-header">
 					<view class="detectioncontent-p">
-						我要检测1
+						我要检测
 					</view>
 					<image style="position: absolute;height: 100%;width: 130%;top: 0;left: 0;" src="../../../static/home/检测/检测.png"
 					 mode=""></image>
