@@ -4,6 +4,7 @@
     "ignore": []
   },
   "setting": {
+<<<<<<< HEAD
     "urlCheck": false,
     "es6": true,
     "enhance": false,
@@ -37,6 +38,9 @@
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true
+=======
+    "urlCheck": false
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
   },
   "compileType": "miniprogram",
   "libVersion": "",
@@ -44,6 +48,7 @@
   "projectname": "艾派车项目",
   "condition": {
     "search": {
+<<<<<<< HEAD
       "list": []
     },
     "conversation": {
@@ -54,6 +59,29 @@
     },
     "miniprogram": {
       "list": []
+=======
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 0,
+      "list": [
+        {
+          "name": "",
+          "path": "",
+          "query": "",
+          "id": 0
+        }
+      ]
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
     }
   }
 }

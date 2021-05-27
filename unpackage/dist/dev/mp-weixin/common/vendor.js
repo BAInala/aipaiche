@@ -822,7 +822,11 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
+<<<<<<< HEAD
       if (Object({"NODE_ENV":"development","VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+=======
+      if (Object({"VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -2000,9 +2004,15 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 11:
+<<<<<<< HEAD
 /*!*******************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/store/index.js ***!
   \*******************************************************/
+=======
+/*!****************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/store/index.js ***!
+  \****************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3154,9 +3164,15 @@ var index = {
 /***/ }),
 
 /***/ 13:
+<<<<<<< HEAD
 /*!**********************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/index.js ***!
   \**********************************************************/
+=======
+/*!*******************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/index.js ***!
+  \*******************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3306,9 +3322,15 @@ var install = function install(Vue) {
 /***/ }),
 
 /***/ 14:
+<<<<<<< HEAD
 /*!*********************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/mixin/mixin.js ***!
   \*********************************************************************/
+=======
+/*!******************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/mixin/mixin.js ***!
+  \******************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3380,9 +3402,15 @@ var install = function install(Vue) {
 /***/ }),
 
 /***/ 15:
+<<<<<<< HEAD
 /*!***********************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/request/index.js ***!
   \***********************************************************************/
+=======
+/*!********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/request/index.js ***!
+  \********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3561,9 +3589,15 @@ new Request();exports.default = _default;
 /***/ }),
 
 /***/ 16:
+<<<<<<< HEAD
 /*!****************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/deepMerge.js ***!
   \****************************************************************************/
+=======
+/*!*************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/deepMerge.js ***!
+  \*************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3602,9 +3636,15 @@ deepMerge;exports.default = _default;
 /***/ }),
 
 /***/ 17:
+<<<<<<< HEAD
 /*!****************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/deepClone.js ***!
   \****************************************************************************/
+=======
+/*!*************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/deepClone.js ***!
+  \*************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3636,9 +3676,15 @@ deepClone;exports.default = _default;
 /***/ }),
 
 /***/ 18:
+<<<<<<< HEAD
 /*!***********************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/test.js ***!
   \***********************************************************************/
+=======
+/*!********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/test.js ***!
+  \********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3878,9 +3924,15 @@ function code(value) {var len = arguments.length > 1 && arguments[1] !== undefin
 /***/ }),
 
 /***/ 19:
+<<<<<<< HEAD
 /*!******************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/queryParams.js ***!
   \******************************************************************************/
+=======
+/*!***************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/queryParams.js ***!
+  \***************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9472,7 +9524,11 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
+<<<<<<< HEAD
         if (Object({"NODE_ENV":"development","VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+=======
+        if (Object({"VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -9493,14 +9549,22 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
+<<<<<<< HEAD
         if(Object({"NODE_ENV":"development","VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+=======
+        if(Object({"VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
+<<<<<<< HEAD
         if(Object({"NODE_ENV":"development","VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+=======
+        if(Object({"VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9586,7 +9650,11 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
+<<<<<<< HEAD
       if (Object({"NODE_ENV":"development","VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+=======
+      if (Object({"VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -9995,17 +10063,29 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 20:
+<<<<<<< HEAD
 /*!************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/route.js ***!
   \************************************************************************/
+=======
+/*!*********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/route.js ***!
+  \*********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} /**
+<<<<<<< HEAD
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        * 并且带有路由拦截功能
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        */var
+=======
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * 并且带有路由拦截功能
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               */var
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 
 Router = /*#__PURE__*/function () {
   function Router() {_classCallCheck(this, Router);
@@ -10920,9 +11000,15 @@ if (hadRuntime) {
 /***/ }),
 
 /***/ 24:
+<<<<<<< HEAD
 /*!*****************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/timeFormat.js ***!
   \*****************************************************************************/
+=======
+/*!**************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/timeFormat.js ***!
+  \**************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10982,9 +11068,15 @@ timeFormat;exports.default = _default;
 /***/ }),
 
 /***/ 25:
+<<<<<<< HEAD
 /*!***************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/timeFrom.js ***!
   \***************************************************************************/
+=======
+/*!************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/timeFrom.js ***!
+  \************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11040,9 +11132,15 @@ timeFrom;exports.default = _default;
 /***/ }),
 
 /***/ 26:
+<<<<<<< HEAD
 /*!********************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/colorGradient.js ***!
   \********************************************************************************/
+=======
+/*!*****************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/colorGradient.js ***!
+  \*****************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11184,9 +11282,15 @@ function colorToRgba(color) {var alpha = arguments.length > 1 && arguments[1] !=
 /***/ }),
 
 /***/ 27:
+<<<<<<< HEAD
 /*!***********************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/guid.js ***!
   \***********************************************************************/
+=======
+/*!********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/guid.js ***!
+  \********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11236,9 +11340,15 @@ guid;exports.default = _default;
 /***/ }),
 
 /***/ 28:
+<<<<<<< HEAD
 /*!************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/color.js ***!
   \************************************************************************/
+=======
+/*!*********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/color.js ***!
+  \*********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11284,9 +11394,15 @@ color;exports.default = _default;
 /***/ }),
 
 /***/ 281:
+<<<<<<< HEAD
 /*!**********************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/util/emitter.js ***!
   \**********************************************************************/
+=======
+/*!*******************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/util/emitter.js ***!
+  \*******************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11344,9 +11460,15 @@ function _broadcast(componentName, eventName, params) {
 /***/ }),
 
 /***/ 282:
+<<<<<<< HEAD
 /*!******************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/util/async-validator.js ***!
   \******************************************************************************/
+=======
+/*!***************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/util/async-validator.js ***!
+  \***************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11373,7 +11495,11 @@ function _broadcast(componentName, eventName, params) {
 var formatRegExp = /%[sdj%]/g;
 var warning = function warning() {}; // don't print warning message when in production env or node runtime
 
+<<<<<<< HEAD
 if (typeof process !== 'undefined' && Object({"NODE_ENV":"development","VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}) && "development" !== 'production' && typeof window !==
+=======
+if (typeof process !== 'undefined' && Object({"VUE_APP_NAME":"艾派车项目","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}) && "development" !== 'production' && typeof window !==
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 'undefined' && typeof document !== 'undefined') {
   warning = function warning(type, errors) {
     if (typeof console !== 'undefined' && console.warn) {
@@ -12706,7 +12832,11 @@ Schema.warning = warning;
 Schema.messages = messages;var _default =
 
 Schema;exports.default = _default;
+<<<<<<< HEAD
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../Downloads/HBuilderX.3.1.12.20210428.full/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 283)))
+=======
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/node-libs-browser/mock/process.js */ 283)))
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 
 /***/ }),
 
@@ -13070,9 +13200,15 @@ var substr = 'ab'.substr(-1) === 'b'
 /***/ }),
 
 /***/ 29:
+<<<<<<< HEAD
 /*!****************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/type2icon.js ***!
   \****************************************************************************/
+=======
+/*!*************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/type2icon.js ***!
+  \*************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13147,9 +13283,15 @@ module.exports = g;
 /***/ }),
 
 /***/ 30:
+<<<<<<< HEAD
 /*!******************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/randomArray.js ***!
   \******************************************************************************/
+=======
+/*!***************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/randomArray.js ***!
+  \***************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13165,9 +13307,15 @@ randomArray;exports.default = _default;
 /***/ }),
 
 /***/ 31:
+<<<<<<< HEAD
 /*!**************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/addUnit.js ***!
   \**************************************************************************/
+=======
+/*!***********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/addUnit.js ***!
+  \***********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13184,9 +13332,15 @@ function addUnit() {var value = arguments.length > 0 && arguments[0] !== undefin
 /***/ }),
 
 /***/ 313:
+<<<<<<< HEAD
 /*!***********************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/util/province.js ***!
   \***********************************************************************/
+=======
+/*!********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/util/province.js ***!
+  \********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13196,9 +13350,15 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 314:
+<<<<<<< HEAD
 /*!*******************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/util/city.js ***!
   \*******************************************************************/
+=======
+/*!****************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/util/city.js ***!
+  \****************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13208,9 +13368,15 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 315:
+<<<<<<< HEAD
 /*!*******************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/util/area.js ***!
   \*******************************************************************/
+=======
+/*!****************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/util/area.js ***!
+  \****************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13220,9 +13386,15 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 32:
+<<<<<<< HEAD
 /*!*************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/random.js ***!
   \*************************************************************************/
+=======
+/*!**********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/random.js ***!
+  \**********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13241,9 +13413,15 @@ random;exports.default = _default;
 /***/ }),
 
 /***/ 33:
+<<<<<<< HEAD
 /*!***********************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/trim.js ***!
   \***********************************************************************/
+=======
+/*!********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/trim.js ***!
+  \********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13267,9 +13445,15 @@ trim;exports.default = _default;
 /***/ }),
 
 /***/ 34:
+<<<<<<< HEAD
 /*!************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/toast.js ***!
   \************************************************************************/
+=======
+/*!*********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/toast.js ***!
+  \*********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13288,9 +13472,15 @@ toast;exports.default = _default;
 /***/ }),
 
 /***/ 35:
+<<<<<<< HEAD
 /*!****************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/getParent.js ***!
   \****************************************************************************/
+=======
+/*!*************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/getParent.js ***!
+  \*************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13346,9 +13536,15 @@ function getParent(name, keys) {
 /***/ }),
 
 /***/ 36:
+<<<<<<< HEAD
 /*!**************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/$parent.js ***!
   \**************************************************************************/
+=======
+/*!***********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/$parent.js ***!
+  \***********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13375,9 +13571,15 @@ function $parent() {var name = arguments.length > 0 && arguments[0] !== undefine
 /***/ }),
 
 /***/ 37:
+<<<<<<< HEAD
 /*!**********************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/sys.js ***!
   \**********************************************************************/
+=======
+/*!*******************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/sys.js ***!
+  \*******************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13394,9 +13596,15 @@ function sys() {
 /***/ }),
 
 /***/ 38:
+<<<<<<< HEAD
 /*!***************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/debounce.js ***!
   \***************************************************************************/
+=======
+/*!************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/debounce.js ***!
+  \************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13434,9 +13642,15 @@ debounce;exports.default = _default;
 /***/ }),
 
 /***/ 39:
+<<<<<<< HEAD
 /*!***************************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/function/throttle.js ***!
   \***************************************************************************/
+=======
+/*!************************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/function/throttle.js ***!
+  \************************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13477,9 +13691,15 @@ throttle;exports.default = _default;
 /***/ }),
 
 /***/ 4:
+<<<<<<< HEAD
 /*!***************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/pages.json ***!
   \***************************************************/
+=======
+/*!************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/pages.json ***!
+  \************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -13488,9 +13708,15 @@ throttle;exports.default = _default;
 /***/ }),
 
 /***/ 40:
+<<<<<<< HEAD
 /*!***********************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/config/config.js ***!
   \***********************************************************************/
+=======
+/*!********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/config/config.js ***!
+  \********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13512,9 +13738,15 @@ var version = '1.8.3';var _default =
 /***/ }),
 
 /***/ 41:
+<<<<<<< HEAD
 /*!***********************************************************************!*\
   !*** C:/Users/HiWin10/Desktop/艾派车5.10/uview-ui/libs/config/zIndex.js ***!
   \***********************************************************************/
+=======
+/*!********************************************************************!*\
+  !*** C:/Users/QBAI/Desktop/艾派车5.10/uview-ui/libs/config/zIndex.js ***!
+  \********************************************************************/
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

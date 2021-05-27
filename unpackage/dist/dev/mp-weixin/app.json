@@ -60,6 +60,15 @@
       }
     ]
   },
+<<<<<<< HEAD
   "usingComponents": {},
   "sitemapLocation": "sitemap.json"
+=======
+  "permission": {
+    "scope.userLocation": {
+      "desc": ""
+    }
+  },
+  "usingComponents": {}
+>>>>>>> b21e0030f3e14202dc730940c96044954718addd
 }
