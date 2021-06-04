@@ -155,7 +155,8 @@ var _default =
 
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    aaa: function aaa() {} } };exports.default = _default;
 
 /***/ }),
 
