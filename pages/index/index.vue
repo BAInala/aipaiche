@@ -13,11 +13,12 @@
 				</view>
 				<view @click="gosearch" class="header-right">
 					<icon style="transform:rotate(90deg);margin: 0 15px;" type="search" size="13" />
-					<input disabled=true  placeholder="输入你想要的车" type="text" value="" />
+					<input disabled=true placeholder="输入你想要的车" type="text" value="" />
 				</view>
 			</view>
 
-			<swiper class="swiper" :autoplay="true" :interval="3000" :duration="1000" :current="swiperCurrent" @change="changeSwiper">
+			<swiper class="swiper" :autoplay="true" :interval="3000" :duration="1000" :current="swiperCurrent"
+				@change="changeSwiper">
 				<swiper-item v-for="item in data.carouselList" :key="item.id">
 					<image class="swiper-item" :src="item.image" mode="widthFix"></image>
 				</swiper-item>
@@ -30,13 +31,12 @@
 				</block>
 			</view>
 		</view>
-
 		<!-- 底部 -->
 		<view class="footer">
 			<!-- 背景颜色 -->
 			<view class="background">
-				<image style="width: 100%;height: 150rpx;margin-top: -105rpx;position: absolute;left: 0;z-index: 2;" src="../../static/home/背景图片.png"
-				 mode=""></image>
+				<image style="width: 100%;height: 150rpx;margin-top: -105rpx;position: absolute;left: 0;z-index: 2;"
+					src="../../static/home/背景图片.png" mode=""></image>
 			</view>
 			<!-- 我要批车 收藏车源 我要检测 心愿清单-->
 			<view class="navigation">
@@ -79,6 +79,9 @@
 			</view>
 			<!-- 维保查询 我的客服 心愿清单 收藏车源 -->
 			<view class="usernavigation">
+				<view style="display: none">
+					<button @click="getUser">点击</button>
+				</view>
 				<view class="usernavigation-content">
 					<image src="../../static/home/chaxun.png" mode=""></image>
 					<view class="usernavigation-p">
@@ -115,7 +118,8 @@
 					</view>
 				</view>
 				<view class="newcar-content">
-					<view @click='gocarparticulars(item)' v-for="item in data.carIndexVoList" :key="item.id" class="wrap">
+					<view @click='gocarparticulars(item)' v-for="item in data.carIndexVoList" :key="item.id"
+						class="wrap">
 						<car-content>
 							<template v-slot:header-img>
 								<image style="width: 100% ;height: 190rpx;" :src="item.path" mode=""></image>
@@ -124,7 +128,8 @@
 								<text>{{item.title}}</text>
 							</template>
 							<template v-slot:skeleton>
-								<text>骨架{{item.star}}星 2007.02 {{item.distance}}万公里 {{item.provinceCode}}{{item.cityCode}}</text>
+								<text>骨架{{item.star}}星 2007.02 {{item.distance}}万公里
+									{{item.provinceCode}}{{item.cityCode}}</text>
 							</template>
 							<template v-slot:seckill>
 								<text>秒杀价 ¥</text>
@@ -176,7 +181,9 @@
 				// 上拉刷新
 				status: 'loadmore',
 				// list: 15,
-				page: 5
+				page: 5,
+				userInfo: {},
+				canIGetUserProfile: false,
 			};
 		},
 
@@ -210,7 +217,7 @@
 		},
 		methods: {
 			// 去搜索界面
-			gosearch(){
+			gosearch() {
 				console.log('去搜索界面');
 				uni.navigateTo({
 					url: '../tabBar/me/search/search',
@@ -244,65 +251,104 @@
 				uni.navigateTo({
 					url: './detection/detection',
 				})
-			}
+			},
+			getUser() {
+				let that = this;
+				uni.getUserProfile({ // 友好的用户体验  先授权 允许后 拿code换取openId
+					desc: '登录22222',
+					provider: 'weixin',
+					success: function(res) {
+						//console.log(res);
+						that.userInfo = res.userInfo;
+						console.log('用户昵称为：' + res.userInfo.nickName);
+						try {
+							that.login();
+						} catch (e) {}
+					},
+					fail(res) {
+						console.log('用户昵称为：失败');
+						that.login(); // 因为失败了 只有用户看不见了 但是我还是能用code换取openID
+					}
+				});
+
+			},
+			//这个 默认 就可以执行 不需要 授权允许  拿code给后端 换取openId session
+			login() {
+				var that = this
+				uni.getProvider({
+					service: 'oauth',
+					success: function(res) {
+						if (~res.provider.indexOf('weixin')) {
+							uni.login({
+								provider: 'weixin',
+								success: (res2) => {
+									debugger
+									console.log("2222", res2.code);
+									uni.request({
+										url: that.url + 'login/wx', //仅为示例，并非真实接口地址。
+										method: 'POST',
+										data: {
+											'code': res2.code
+										}, //自定义请求头信息,
+										success: (res) => {
+											console.log("code换取", res.data.data)
+											uni.setStorageSync('userdata', res.data
+												.data);
+											console.log(uni.getStorageSync('userdata'))
+
+											uni.request({
+												url: that.url +
+													'/index', //仅为示例，并非真实接口地址。
+												header: {
+													'Authorization': uni
+														.getStorageSync(
+															'userdata')
+														.token
+												},
+												method: 'POST',
+												data: {
+													'pageNum': 0,
+													'pageSize': 5
+												},
+												success: (res) => {
+													console.log(res.data
+														.data);
+													that.data = res.data
+														.data
+												}
+											});
+										}
+									});
+
+
+
+
+								},
+							})
+
+						} else {
+							uni.showToast({
+								title: '请先安装微信或升级版本',
+								icon: "none"
+							});
+						}
+					}
+				});
+
+
+
+			},
+
 
 		},
 
 		mounted() {
-			var that = this
-			uni.getProvider({
-				service: 'oauth',
-				success: function(res) {
-					if (~res.provider.indexOf('weixin')) {
-						uni.login({
-							provider: 'weixin',
-							success: (res2) => {
-								console.log(res2.code);
-								uni.request({
-									url: that.url + 'login/wx', //仅为示例，并非真实接口地址。
-									method: 'POST',
-									data: {
-										'code': res2.code
-									}, //自定义请求头信息,
-									success: (res) => {
-										console.log(res.data.data);
-										uni.setStorageSync('userdata', res.data.data);
-										console.log(uni.getStorageSync('userdata'))
+			this.login();
 
-										uni.request({
-											url: that.url + '/index', //仅为示例，并非真实接口地址。
-											header: {
-												'Authorization': uni.getStorageSync('userdata').token
-											},
-											method: 'POST',
-											data: {
-												'pageNum': 0,
-												'pageSize': 5
-											},
-											success: (res) => {
-												console.log(res.data.data);
-												that.data = res.data.data
-											}
-										});
-									}
-								});
-
-
-
-
-							},
-						})
-
-					} else {
-						uni.showToast({
-							title: '请先安装微信或升级版本',
-							icon: "none"
-						});
-					}
-				}
-			});
 
 		},
+		onLoad() {},
+
 		onShow() {
 			// 跳转
 			// uni.navigateTo({
@@ -318,6 +364,11 @@
 </script>
 
 <style scoped>
+	.testuser {
+		height: 50px;
+		line-height: 50px;
+	}
+
 	.item {
 		padding: 24rpx 0;
 		color: $u-content-color;

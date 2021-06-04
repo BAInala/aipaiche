@@ -32,7 +32,10 @@
 
 				</view>
 			</view>
-
+              
+			 <view>
+				 
+			 </view>
 			<!--我发布的，我卖出的  -->
 			<view class="menu">
 				<view @click="goissue" class="user-function">

@@ -4,43 +4,7 @@
     "ignore": []
   },
   "setting": {
-<<<<<<< HEAD
-    "urlCheck": false,
-    "es6": true,
-    "enhance": false,
-    "postcss": true,
-    "preloadBackgroundData": false,
-    "minified": true,
-    "newFeature": false,
-    "coverView": true,
-    "nodeModules": false,
-    "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "uglifyFileName": false,
-    "checkInvalidKey": true,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
-    "useMultiFrameRuntime": true,
-    "useApiHook": true,
-    "useApiHostProcess": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "enableEngineNative": false,
-    "useIsolateContext": true,
-    "useCompilerModule": true,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "userConfirmedBundleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true
-=======
     "urlCheck": false
->>>>>>> b21e0030f3e14202dc730940c96044954718addd
   },
   "compileType": "miniprogram",
   "libVersion": "",
@@ -48,18 +12,6 @@
   "projectname": "艾派车项目",
   "condition": {
     "search": {
-<<<<<<< HEAD
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": []
-=======
       "current": -1,
       "list": []
     },
@@ -81,7 +33,6 @@
           "id": 0
         }
       ]
->>>>>>> b21e0030f3e14202dc730940c96044954718addd
     }
   }
 }
